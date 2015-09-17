@@ -1,0 +1,37 @@
+{
+  "name": "gpsLocation",
+  "version": "0.0.0",
+  "description": "find distance between 2 points",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoeDou/gpsLocation.git"
+  },
+  "author": "Joe Dou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoeDou/gpsLocation/issues"
+  },
+  "homepage": "https://github.com/JoeDou/gpsLocation",
+  "dependencies": {
+    "express": "^4.13.3",
+    "cors": "^2.7.1",
+    "body-parser": "^1.13.3",
+    "fs": "0.0.2",
+    "fs-extra": "^0.24.0",
+    "formidable": "^1.0.17",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-jshint": "^1.11.2",
+    "gulp-istanbul": "^0.10.0",
+    "gulp-mocha": "^2.1.3",
+    "chai": "^3.2.0",
+    "supertest": "^1.1.0",
+  }
+}

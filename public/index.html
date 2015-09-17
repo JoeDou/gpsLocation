@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Distance by GPS location</title>
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' >
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+    <script src='js/app.js'></script>
+</head>
+<body>
+    <form id='data' class='form-horizontal' action="/upload" enctype="multipart/form-data" method="post">
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="longitude">Longitude (deg): </label>
+            <div class="col-sm-10">
+                <input class="form-control" name="longitude" type="text" id="longitude" placeholder="Longitude"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="latitude">Latitude (deg): </label>
+            <div class="col-sm-10">
+                <input class="form-control" name="latitude" type="text" id="latitude" placeholder="Latitude"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label" for="distance">Distance (km): </label>
+            <div class="col-sm-10">
+                <input class="form-control" name="distance" type="text" placeholder="Distance"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input multiple="multiple" name="upload" type="file" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" value="Upload" />
+            </div>
+        </div>       
+    </form>
+    <div class="row tableContainer">
+    <div class='col-sm-offset-2 col-sm-10'>
+        <table class='table table-hover'>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Lat</th>
+                <th>Lon</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>test test</td>
+                <td>44.4</td>
+                <td>55.5</td>
+            </tr>      
+        </table>
+        <div class='noResult message'>No data found</div>
+        <div class='error message'>There was a problem with the submission</div>
+    </div>
+    </div>
+
+
+</body>
+</html>
